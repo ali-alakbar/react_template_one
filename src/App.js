@@ -15,9 +15,8 @@ class App extends Component {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/" className="active" element={<Home />} />
-            <Route path="/Home.js" className="active" element={<Home />} />
             <Route path="/react_template_one" element={<Home />} />
+            <Route path="/Home.js" className="active" element={<Home />} />
             <Route path="/About.js" className="active" element={<About />} />
             <Route path="/Services.js" className="active" element={<Services />} />
             <Route path="/Contact.js" className="active" element={<Contact />} />
