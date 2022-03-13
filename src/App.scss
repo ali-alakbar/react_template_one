@@ -1,0 +1,161 @@
+$--mainWhite: #fff;
+$--mainBlack: #0c0d0d;
+$--mainGray: #999;
+$--mainHomePink: #4d1c55;
+$--homePinkLight: #4a1952ba;
+$--backgroundHome: #f7ffff;
+$--mainTransition: all 0.3s ease-in-out;
+
+/* Start Screen Responsive */
+
+/* Small Screens */
+@media (min-width: 768px) {
+  .App,
+  .container {
+    width: 750px;
+  }
+}
+/* Medium Screens */
+@media (min-width: 992px) {
+  .App,
+  .container {
+    width: 970px;
+  }
+}
+/* Big Screens */
+@media (min-width: 1200px) {
+  .App,
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+.disable {
+  display: none;
+}
+
+// ======== Start Global Variables ==========
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+input {
+  outline: none;
+}
+.App {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 95%;
+  border: solid 3px $--mainWhite;
+  border-radius: 20px;
+  box-shadow: 0px 0px 19px 9px rgba(0, 0, 0, 0.1);
+  font-family: "Futura LT Book", sans-serif;
+  overflow: hidden;
+  .page {
+    height: 100%;
+  }
+}
+/* Medium Screens */
+@media (max-width: 992px) {
+  .App {
+    transform: inherit;
+    top: inherit;
+    left: inherit;
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+    overflow: inherit !important;
+  }
+}
+
+// ======== End Global Variables ==========
+
+// ================= Start Bubble =================
+
+.bubble {
+  border-radius: 50%;
+  background-color: #dbceec;
+  position: absolute;
+}
+/* Medium Screens */
+@media (max-width: 992px) {
+  .bubble {
+    display: none;
+  }
+}
+
+.bubble-one {
+  width: 10vh;
+  height: 10vh;
+  top: 17vh;
+  left: 15vh;
+}
+.bubble-two {
+  width: 5vh;
+  height: 5vh;
+  top: 15vh;
+  left: 10vh;
+}
+.bubble-three {
+  width: 25vh;
+  height: 25vh;
+  top: 56vh;
+  left: 30vh;
+  z-index: 1;
+}
+// ================= End Bubble =================
+
+// ================= Start Languages =================
+.Header-content {
+  position: absolute;
+  height: 4em;
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .logo {
+      color: $--mainHomePink;
+    }
+    .languages {
+      display: flex;
+      justify-content: flex-end;
+      font-weight: 800;
+      gap: 1em;
+      li {
+        transition: $--mainTransition;
+        color: #4a1952ba;
+        cursor: pointer;
+        font-size: 0.7em;
+        &:hover,
+        &:focus {
+          color: $--mainHomePink;
+        }
+      }
+    }
+  }
+}
+
+// ================= End Languages =================

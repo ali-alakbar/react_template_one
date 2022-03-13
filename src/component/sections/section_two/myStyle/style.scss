@@ -1,0 +1,85 @@
+@import "../../section_one/myStyle/style";
+
+// ==========
+// Start General Stylling
+// ==========
+.section {
+  grid-template-columns: 1fr 1fr !important;
+  .awssld__content {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0) !important;
+  }
+
+  .awssld__bullets {
+    bottom: 30px !important;
+    z-index: 777;
+  }
+
+  .awssld__controls__arrow-right::before,
+  .awssld__controls__arrow-left::before {
+    top: 0% !important;
+    height: 50% !important;
+    background-color: $--mainBlack !important;
+  }
+  .awssld__controls__arrow-right::after,
+  .awssld__controls__arrow-left::after {
+    top: 50% !important;
+    height: 50% !important;
+    background-color: $--mainBlack !important;
+  }
+
+  // Disablling the time line for the next slide
+  .awssld__timer--run {
+    background-color: rgba(17, 17, 17, 0) !important;
+  }
+}
+/* Small Screens */
+@media (max-width: 768px) {
+  .awssld__bullets {
+    position: relative;
+    bottom: 0px !important;
+  }
+}
+// ==========
+// Start Services Page
+// ==========
+.services {
+  text-align: center;
+  h1 {
+    margin-bottom: 1rem;
+  }
+  p {
+    color: #111;
+  }
+  .awssld__bullets {
+    button {
+      background-color: #555 !important;
+    }
+    .awssld__bullets--active {
+      background-color: $--mainBlack !important;
+    }
+  }
+}
+
+// ==========
+// Start FAQ Page
+// ==========
+.FAQ {
+  text-align: center;
+  a {
+    color: #262844;
+    margin-bottom: 1rem;
+    transition: $--mainTransition;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+
+  .awssld__bullets {
+    button {
+      background-color: #2628449c !important;
+    }
+    .awssld__bullets--active {
+      background-color: #262844 !important;
+    }
+  }
+}

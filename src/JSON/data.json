@@ -1,0 +1,76 @@
+{
+    "home": {
+        "section_one":{
+            "description":{
+                "title": "Feel The Nature of Design",
+                "subTitle":"Fashion yourself in a modren form, click the below link to find the your charecter and get a free one.",
+                "btn":"Join us"
+            }
+        },
+        "about":{
+            "description":{
+                "title": "Hi, I am Ali.",
+                "subTitle":"I am Your Digital Agency Who Helps You to Neon Your Interior in The Digital World.",
+                "btn":"Call me!"
+            }
+        }
+    },
+    "services":[
+            {
+                "id": 1 ,
+                "title": "Clean Code",
+                "service":"Getting your clean modren code with security and more."
+            },
+            {
+                "id": 2 ,
+                "title": "Modren Design",
+                "service":"I like to build a website that look like playing a game."
+            },
+            {
+                "id": 3 ,
+                "title": "Advertising",
+                "service":"My team is here to help you out to guide you up with your business."
+            },
+            {
+                "id": 4 ,
+                "title": "Consultant",
+                "service":"Join our community to get your free 1 year account"
+            }
+        ],
+    "contact": {
+        "title" : "Talk to a Human",
+        "questions": [
+            {
+                "id": 1,
+                "question": "How Did You Get Here ?",
+                "destination": "https://www.facebook.com"
+            },
+            {
+                "id": 2,
+                "question": "Do You Know Who I am ?",
+                "destination": "https://www.instagram.com"
+            },
+            {
+                "id": 3,
+                "question": "Say My Name Please ?",
+                "destination": "https://www.youtube.com"
+            },            {
+                "id": 4,
+                "question": "Now, Can You Find Me ?",
+                "destination": "https://www.facebook.com"
+            },
+            {
+                "id": 5,
+                "question": "Follow Your Path, Can You Do That?",
+                "destination": "https://www.instagram.com"
+            },
+            {
+                "id": 6,
+                "question": "I am on The Other Side.",
+                "destination": "https://www.youtube.com"
+            }
+        ]
+
+    }
+
+}
