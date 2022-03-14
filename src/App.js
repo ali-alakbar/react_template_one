@@ -15,18 +15,17 @@ class App extends Component {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/react_template_one"  element={<Home />}/>
-            <Route path="/Home.js"  element={<Home />} />
-            <Route path="/About.js"  element={<About />} />
-            <Route path="/Services.js"  element={<Services />} />
-            <Route path="/Contact.js"  element={<Contact />} />
-            <Route path="/FAQ.js" element={<FAQ />} />
+            <Route path="/react_template_one" className="active" element={<Home />}/>
+            <Route path="/Home.js" className="active" element={<Home />} />
+            <Route path="/About.js" className="active" element={<About />} />
+            <Route path="/Services.js" className="active" element={<Services />} />
+            <Route path="/Contact.js" className="active" element={<Contact />} />
+            <Route path="/FAQ.js" className="active" element={<FAQ />} />
           </Routes>
         </BrowserRouter>
       </div>
     );
   }
 }
-// className="active"
 
 export default App;
